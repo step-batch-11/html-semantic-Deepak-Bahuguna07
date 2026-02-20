@@ -15,22 +15,24 @@ body {
 
 body > header {
   width: 100%;
-  height: 150px;
+  height: 130px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(46, 99, 46);
   gap: 1.3em;
+  color: white;
+  position: sticky;
+  top: 0;
 }
 
 nav {
-  width: 100%;
-  height: 50px;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5em;
-  font-size: 1.7em;
-  font-weight: 600;
-  background-color: rgb(46, 99, 46);
+  gap: 3em;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -44,20 +46,21 @@ nav a:hover {
 }
 
 hgroup {
-  width: 100%;
-  text-align: center;
-  gap: 1.8em;
+  width: 60%;
+  padding-left: 10em;
+  gap: 1em;
 }
 
 header hgroup h1 {
   width: 100%;
-  padding-left: 0.5em;
   font-size: 2.6em;
+  font-weight: 400;
 }
 
 header hgroup h2 {
   width: 100%;
   padding-left: 1em;
+  font-weight: 300;
 }
 
 main {
@@ -67,7 +70,7 @@ main {
   border-collapse: collapse;
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 2em;
   gap: 1em;
 }
 
@@ -81,35 +84,33 @@ mark:hover {
 
 main article {
   border-radius: 5px;
-  background-color: whitesmoke;
   width: 55%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px 10px;
-  box-shadow: 1px 1px 2px 1px rgb(171, 168, 168);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1em;
+  gap: 3em;
 }
 
 main article header {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
-  padding: 0.5em 1em;
-  gap: 0.5em;
+  padding: 1em 1em;
+  gap: 0.7em;
 }
 
 main article header h3 {
   width: 100%;
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
 }
 
 main article > p {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 main article section {
@@ -118,13 +119,16 @@ main article section {
   flex-direction: column;
   gap: 1em 0;
   padding-left: 1em;
+  padding-bottom: 1em;
+  border-bottom: 0.3px solid rgb(187, 180, 180);
 }
 
 main article section h3 {
   width: 100%;
   height: max-content;
-  font-size: 30px;
+  font-size: 1.4em;
   padding-left: 0;
+  font-weight: 500;
 }
 
 main article section p {
@@ -156,12 +160,22 @@ main article section details {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  background-color: rgb(202, 230, 202);
+  padding: 1rem;
+  border-left: 4px solid #05a129;
 }
 
 main article section details summary {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 400;
   line-height: 1.1em;
+}
+
+main section ul {
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 main article footer {
@@ -171,7 +185,7 @@ main article footer {
 main article footer address {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   padding: 0.5em;
   gap: 0.5em;
   width: 100%;
@@ -183,7 +197,6 @@ main aside {
   padding: 1em;
   width: 20%;
   height: 150px;
-  box-shadow: 1px 1px 2px 1px rgb(171, 168, 168);
   display: flex;
   flex-direction: column;
   gap: 1em;
