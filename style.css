@@ -15,32 +15,38 @@ body {
 
 body > header {
   width: 100%;
-  height: 130px;
+  height: 150px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(55, 91, 55);
+  flex-direction: column;
+  gap: 1.3em;
 }
 
 nav {
-  width: 40%;
+  width: 100%;
+  height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 5em;
   font-size: 1.7em;
   font-weight: 600;
+  background-color: rgb(46, 99, 46);
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+nav a:hover {
+  transform: scale(1.1);
 }
 
 hgroup {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  width: 100%;
+  text-align: center;
+  gap: 1.8em;
 }
 
 header hgroup h1 {
@@ -65,6 +71,14 @@ main {
   gap: 1em;
 }
 
+mark {
+  background-color: rgb(180, 215, 180);
+}
+
+mark:hover {
+  background-color: rgb(126, 181, 126);
+}
+
 main article {
   border-radius: 5px;
   background-color: whitesmoke;
@@ -74,8 +88,7 @@ main article {
   flex-direction: column;
   justify-content: center;
   gap: 20px 10px;
-  box-shadow: 1px 1px 3px 3px rgb(171, 168, 168);
-
+  box-shadow: 1px 1px 2px 1px rgb(171, 168, 168);
   font-size: 20px;
   line-height: 1.1em;
 }
@@ -170,7 +183,7 @@ main aside {
   padding: 1em;
   width: 20%;
   height: 150px;
-  box-shadow: 1px 1px 3px 3px rgb(171, 168, 168);
+  box-shadow: 1px 1px 2px 1px rgb(171, 168, 168);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -188,9 +201,10 @@ main aside p {
 }
 
 body > footer {
+  margin-top: 1em;
   width: 100%;
   padding: 1em;
-  background-color: rgb(26, 50, 27);
+  background-color: rgb(46, 99, 46);
   color: white;
   display: flex;
   justify-content: center;
@@ -200,7 +214,7 @@ body > footer {
 dialog {
   padding: 1em;
   position: fixed;
-  bottom: 60px;
+  bottom: 80px;
   left: 77%;
   border-radius: 10px;
   font-size: 20px;
